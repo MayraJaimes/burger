@@ -13,7 +13,7 @@ ul {
 header {
     text-align: center;
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
 }
  
 h1 {
@@ -26,12 +26,12 @@ h2 {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .subsection {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
@@ -53,6 +53,7 @@ h2 {
 .wrapper > div {
     justify-self: center;
     width: 70%;
+    margin: 20px;
 }
 
 .wrapper:first-child {
@@ -61,9 +62,8 @@ h2 {
 }
 
 .form {
-    margin: 20px;
     width: 50%;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -94,3 +94,37 @@ li {
     color: #feb705;
 }
 
+
+@media only screen and (min-width: 768px) {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 980px) { 
+    header {
+        width: 50%;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wrapper > div {
+        margin: 0;
+    }
+
+    .form {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
