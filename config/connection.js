@@ -2,7 +2,6 @@ var mysql = require("mysql");
 
 var connection = mysql.createConnection({
 
-
     localhost: {
         port: 3306,
         host: "localhost",
@@ -10,7 +9,6 @@ var connection = mysql.createConnection({
         password: "",
         database: "burgers_db"
       },
-    
       jawsDB: {
         port: 3306,
         host: "localhost",
