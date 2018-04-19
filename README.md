@@ -13,5 +13,5 @@ In this app a user has the ability to input the name of a burger that they will 
 * HTML5
 * CSS
 * Javascript
-* Node.Js
+* Node.js
 * MySQL
